@@ -1,0 +1,28 @@
+// Dart program demonstrating data types
+
+void main() {
+  // 1. int data type
+  int age = 25;
+  print('Age: $age'); // Output: Age: 25
+
+  // 2. double data type
+  double height = 5.9;
+  print('Height: $height'); // Output: Height: 5.9
+
+  // 3. String data type
+  String name = 'John Doe';
+  print('Name: $name'); // Output: Name: John Doe
+
+  // 4. List data type
+  List<String> hobbies = ['Reading', 'Coding', 'Traveling'];
+  print('Hobbies: $hobbies'); // Output: Hobbies: [Reading, Coding, Traveling]
+
+  // 5. Map data type
+  Map<String, dynamic> personInfo = {
+    'name': 'Alice',
+    'age': 30,
+    'isStudent': false,
+  };
+  print('Person Info: $personInfo');
+  // Output: Person Info: {name: Alice, age: 30, isStudent: false}
+}
