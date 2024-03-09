@@ -1,0 +1,51 @@
+// Dart functions assignment
+
+// Task 1
+int addTwo(int a, int b) {
+  return a + b;
+}
+
+// Task 2
+double subtractTwo(double a, double b) {
+  return a - b;
+}
+
+// Task 3
+double multiplyTwo(double a, double b) {
+  return a * b;
+}
+
+// Task 4
+double divideTwo(double a, double b) {
+  if (b != 0) {
+    return a / b;
+  } else {
+    print('Error: Division by zero');
+    return double.nan; // Not a Number
+  }
+}
+
+// Task 5
+int stringLength(String str) {
+  return str.length;
+}
+
+// Task 6
+dynamic getFirstElement(List<dynamic> list) {
+  if (list.isNotEmpty) {
+    return list[0];
+  } else {
+    print('Error: The list is empty');
+    return null;
+  }
+}
+
+void main() {
+  // Testing the functions
+  print('Task 1 - Add Two Numbers: ${addTwo(5, 3)}'); // Output: 8
+  print('Task 2 - Subtract Two Numbers: ${subtractTwo(8.5, 3.2)}'); // Output: 5.3
+  print('Task 3 - Multiply Two Numbers: ${multiplyTwo(2.5, 4)}'); // Output: 10.0
+  print('Task 4 - Divide Two Numbers: ${divideTwo(10, 2)}'); // Output: 5.0
+  print('Task 5 - String Length: ${stringLength("Hello")}'); // Output: 5
+  print('Task 6 - Get First Element: ${getFirstElement([1, 2, 3])}'); // Output: 1
+}
